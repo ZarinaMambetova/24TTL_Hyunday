@@ -1,0 +1,70 @@
+.main__form {
+  background-color: #032D5D;
+  display: flex;
+  padding: 0 10px;
+
+  align-items: center;
+}
+.form__container {
+  display: flex;
+    align-items: center;
+}
+
+
+form {
+
+  display: flex;
+  margin: 45px 0 29px;
+}
+
+.form-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(134, 131, 131);
+  
+  font-family: "Hyundai Sans Text Regular";
+  font-size: 16px;
+  color: #fff;
+  padding: 18px 70px 18px 3px;
+  outline: 0;
+  width: 180px;
+  margin-right: 20px;
+  @media (max-width: 1450px) {width: 130px;  }
+  
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: url('./images/pic/1.png') no-repeat right center;
+  outline: 0;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #fff; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #fff; }
+input::-ms-input-placeholder, textarea::-ms-input-placeholder { color: #fff; }
+input::placeholder, textarea::placeholder { color: #fff; } 
+
+
+.button {
+  color: #0B3367; 
+  font-family: "Hyundai Sans Text Regular";
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  transition: .5s;
+  padding: 15px 41px;
+  border: none;
+  margin-top: 15px;
+
+&:hover {
+    background-color: #c9c6e4;
+}
+@media (max-width: 1450px) {padding: 15px 25px;  }
+
+  }
+

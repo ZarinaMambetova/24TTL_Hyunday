@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 105px;
+}
+
+.social__subtitle {
+  font-family: "Hyundai Sans Head KR Regular";
+  font-size: 24px;
+  color: #7E8183;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  font-family: "Hyundai Sans Head KR Regular";
+  font-size: 24px;
+}
+
+.social__item {
+  margin-left: 57px;
+}
+
+.social__link {
+  color: #fff;
+  border-bottom: 1px #1385B7 solid;
+}

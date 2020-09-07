@@ -1,0 +1,31 @@
+.about-list {
+  display: flex;
+  margin: 29px 5px;
+}
+
+.about__item {
+  font-family: "Hyundai Sans Text Regular";
+  font-size: 18px;
+  color: black;
+  &:first-child {
+    margin-right: 79px;
+  }
+}
+
+.about__item-text {
+  margin: 22px 0;
+  align-items: center;
+    display: flex;
+}
+
+.about__item-text::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: url('./images/pic/check-main.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 16px; 
+}

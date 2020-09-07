@@ -1,0 +1,16 @@
+.button_blue {
+  background-color: #032D5D;
+  color: white;
+  margin: 40px;
+  &:hover {
+    background-color: #034086;
+}
+}
+
+.info-block {
+  padding-bottom: 70px;
+}
+
+.info-text {
+  padding-bottom: 50px;
+}

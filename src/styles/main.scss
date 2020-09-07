@@ -1,0 +1,69 @@
+@import "./layout/media.scss";
+@import "./layout/*.scss";
+
+// @media (max-width: 758px) { .... } - пример медиа-запроса при адаптиве
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+  a {
+    text-decoration: none;
+  }
+
+
+html {
+    height: 100%;
+    color: #fff;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-width: 940px;
+}
+
+.container {
+  width: 63%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Hyundai Sans Head KR Bold";
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.subtitle {
+  font-family: "Hyundai Sans Head KR Regular";
+  font-size: 24px;
+  line-height: 2;
+}
+
+.title__black, .subtitle__black {
+  color: #000;
+}
+
+.subtitle__black {
+  line-height: 1.3;
+  padding-top: 7px;
+}
+
+.subtitle__black-interior {
+  font-family: "Hyundai Sans Head KR Medium";
+  font-size: 20px;
+}
