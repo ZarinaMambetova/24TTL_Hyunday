@@ -8,6 +8,9 @@
 .form__container {
   display: flex;
     align-items: center;
+    @media (max-width: 700px) {
+    flex-direction: column;
+    }
 }
 
 
@@ -15,6 +18,18 @@ form {
 
   display: flex;
   margin: 45px 0 29px;
+  @media (max-width: 1150px) {
+
+  margin: 45px 0 29px -72px;
+}
+@media (max-width: 970px) {
+margin: 45px 0 29px -124px;
+}
+@media (max-width: 700px) {
+display: flex;
+flex-direction: column;
+margin: 20px 0 20px 0;
+}
 }
 
 .form-input {
@@ -29,8 +44,17 @@ form {
   outline: 0;
   width: 180px;
   margin-right: 20px;
-  @media (max-width: 1450px) {width: 130px;  }
-  
+  @media (max-width: 1450px) {
+    width: 135px;  }
+  @media (max-width: 1150px) {
+    width: 125px;
+    font-size: 13px;  }
+    @media (max-width: 700px) {
+    width: 310px;
+    font-size: 14px;
+    margin-right: 0;
+    
+    }
 }
 
 select {
@@ -42,11 +66,14 @@ select {
   outline: 0;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #fff; }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #fff; }
-input::-ms-input-placeholder, textarea::-ms-input-placeholder { color: #fff; }
-input::placeholder, textarea::placeholder { color: #fff; } 
+input::-webkit-input-placeholder, select::-webkit-input-placeholder { color: #fff; }
+input:-ms-input-placeholder, select:-ms-input-placeholder { color: #fff; }
+input::-ms-input-placeholder, select::-ms-input-placeholder { color: #fff; }
+input::placeholder, select::placeholder { color: #fff; } 
 
+option {
+  color: black;
+}
 
 .button {
   color: #0B3367; 
@@ -64,7 +91,12 @@ input::placeholder, textarea::placeholder { color: #fff; }
 &:hover {
     background-color: #c9c6e4;
 }
-@media (max-width: 1450px) {padding: 15px 25px;  }
-
+@media (max-width: 1450px) {
+  padding: 15px 25px;
   }
-
+  @media (max-width: 700px) {
+padding: 15px 124px;
+margin-top: 0;
+margin-bottom: 30px;
+  }
+}

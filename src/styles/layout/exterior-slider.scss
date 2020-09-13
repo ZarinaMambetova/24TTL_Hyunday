@@ -22,7 +22,7 @@
 }
 
 .exterior-slider__item {
-  margin: 0 0 30px 80px;
+  margin: 0 15px 15px 38px;
   scroll-snap-align: start;
   flex-shrink: 0;
   transform-origin: center center;
@@ -38,6 +38,10 @@
 .exterior-slider__photo {
   width: 1079px;
   height: 540px;
+  @media (max-width: 1750px) {
+  width: 904px;
+    height: 474px;
+}
 }
 
 
@@ -51,6 +55,9 @@
   text-align: center;
   overflow: hidden;
   margin-bottom: 100px;
+  @media (max-width: 1750px) {
+  width: 1355px;
+  }
 }
 
 .exterior-slider__list::-webkit-scrollbar {
